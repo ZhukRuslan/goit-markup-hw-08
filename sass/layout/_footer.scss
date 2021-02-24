@@ -1,0 +1,73 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: #2F303A;
+}
+.join-contackts {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.address {
+    font-style: normal;
+    margin-top: 20px;
+}
+
+.join-social-titel {
+    display: inline-block;
+    width: 145px;
+    height: 16px;
+    font-family: var(--text-font);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    margin-bottom: 17px;
+}
+.join-social {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-self: flex-start;
+    width: 206px;
+    height: 77px;
+    margin-left: 70px;
+}
+.join-social-list {
+    display: flex;
+    margin: auto;
+    padding: auto;
+}
+.join-social-list-item {
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
+}
+.join-social-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover ,
+        &:focus  {
+            background-color: #2196F3;
+    }
+}
+.join-social-list-icom {
+    width: 20px;
+    height: 20px;
+    fill: #ffffff;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .join-social-list-link:hover & ,
+    .join-social-list-link:focus & {
+        fill: #ffffff;
+    }
+}
