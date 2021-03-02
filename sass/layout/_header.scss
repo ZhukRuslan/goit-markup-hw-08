@@ -10,7 +10,16 @@
     padding-bottom: 16px;
     border-bottom: 1px solid #ECECEC;
 }
-@media screen and (min-width: 768px) {
+.icon-menu-btn {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+.icon-menu {
+    width: 40px;
+    height: 40px;
+}
+/*@media screen and (min-width: 768px) {
     .header {
         padding-top: 26px;
         padding-bottom: 26px;
@@ -21,12 +30,9 @@
         padding-top: 24px;
         padding-bottom: 25px;
     }
-}
+}*/
 
-
-
-/*
-.navigation {
+/*.navigation {
     display: flex;
     align-items: center;
 }
