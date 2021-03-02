@@ -28,7 +28,8 @@
             </li>
         </ul>
         </nav>
-        <button type="button" class="menu-btn">
+
+        <button type="button" class="menu-btn" data-menu-button>
             <svg class="icon-menu">
                 <use href="./images/sprite.svg#i-menu"></use>
             </svg>
@@ -46,6 +47,54 @@
             </svg> 
         +38 096 111 11 11</a>
     </div>
+    <div class="modal-menu" data-menu>
+        <button type="button" class="mobail-close-btn" data-menu-close>
+            <svg class="mobail-icom-close-btn">
+                <use href="./images/sprite.svg#close-btn"></use>
+            </svg> 
+        </button>
+        <ul class="modal-menu-list list">
+            <li class="modal-menu-list-item">
+                <a href="./index.html" class="modal-menu-link link">Студия</a>
+            </li>
+            <li class="modal-menu-list-item">
+                <a href="#" class="modal-menu-link link">Портфолио</a>
+            </li>
+            <li class="modal-menu-list-item">
+                <a href="#" class="modal-menu-link link">Контакты</a>
+            </li>
+        </ul>
+        <div class="mobail-contakt">
+            <ul class="mobail-contakt-list list">
+                <li class="mobail-contakt-list-item">
+                    <a class="mobail-tel-link link" href="tel:+380961111111">
+                        +38 096 111 11 11</a>
+                </li> 
+                <li class="mobail-contakt-list-item">                
+                    <a class="mobail-email-link link" href="mailto:info@devstudio.com">
+                        info@devstudio.com</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="social-mobail">
+            <ul class="social-mobail-list list">
+                <li class="social-mobail-list-item">
+                    <a class="social-mobail-link link" href="#">Instagram</a>
+                </li> 
+                <li class="social-mobail-list-item">
+                    <a class="social-mobail-link link" href="#">Twitter</a>
+                </li> 
+                <li class="social-mobail-list-item">
+                    <a class="social-mobail-link link" href="#">Facebook</a>
+                </li> 
+                <li class="social-mobail-list-item">
+                    <a class="social-mobail-link link" href="#">LinkedIn</a>
+                </li> 
+            </ul>
+        </div>
+    </div>
+    
     </header>
 
     <main class="main">
@@ -456,5 +505,6 @@
     </div> -->
 
     <script src="./js/modal.js"></script>
+    <script src="./js/modal-menu.js"></script>
 </body>
 </html>
