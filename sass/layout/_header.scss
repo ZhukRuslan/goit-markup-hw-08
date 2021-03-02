@@ -1,8 +1,31 @@
+.navigation-list,
+.email-link,
+.tel-link,
+.icom-envelope,
+.icom-smartphone {
+    display: none;
+}
 .header {
-    padding-top: 24px;
-    padding-bottom: 25px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     border-bottom: 1px solid #ECECEC;
 }
+@media screen and (min-width: 768px) {
+    .header {
+        padding-top: 26px;
+        padding-bottom: 26px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .header {
+        padding-top: 24px;
+        padding-bottom: 25px;
+    }
+}
+
+
+
+/*
 .navigation {
     display: flex;
     align-items: center;
@@ -80,4 +103,4 @@
     width: 10px;
     height: 16px;
     margin-right: 10px;
-}
+}*/
