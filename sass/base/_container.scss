@@ -9,10 +9,21 @@
     justify-content: space-between;
     }
 }
+
 @media screen and (min-width: 480px) {
     .container {
         width: 480px;
         margin: 0 auto;
+    }
+    .container {
+        & .hero-title {
+            margin-bottom: 30px;
+        }
+        & .btn {
+            max-width: 200px;
+            height: 50px;
+            align: center;
+        }
     }
 }
 
@@ -27,15 +38,4 @@
         width: 1200px;
     }
 }
-
-/*.container {
-    & .hero-title {
-        margin-bottom: 30px;
-    }
-    & .btn {
-        max-width: 200px;
-        height: 50px;
-        align: center;
-    }
-}*/
 

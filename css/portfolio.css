@@ -53,11 +53,24 @@ img {
   text-decoration: none;
 }
 
-.section-padding {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (min-width: 480px) {
+  .section-padding {
+    padding-top: 66px;
+    padding-bottom: 58px;
+  }
 }
-
+@media screen and (min-width: 768px) {
+  .section-padding {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-padding {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 .container {
   width: 100%;
   height: 100%;
@@ -74,6 +87,15 @@ img {
     width: 480px;
     margin: 0 auto;
   }
+
+  .container .hero-title {
+    margin-bottom: 30px;
+  }
+  .container .btn {
+    max-width: 200px;
+    height: 50px;
+    align: center;
+  }
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -85,16 +107,6 @@ img {
     width: 1200px;
   }
 }
-/*.container {
-    & .hero-title {
-        margin-bottom: 30px;
-    }
-    & .btn {
-        max-width: 200px;
-        height: 50px;
-        align: center;
-    }
-}*/
 .logo-link {
   width: 134px;
   height: 28px;
@@ -127,18 +139,18 @@ img {
     letter-spacing: 0.03em;
     color: #FFFFFF;
 }*/
+.header {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #ECECEC;
+}
+
 .navigation-list,
 .email-link,
 .tel-link,
 .icom-envelope,
 .icom-smartphone {
   display: none;
-}
-
-.header {
-  padding-top: 16px;
-  padding-bottom: 16px;
-  border-bottom: 1px solid #ECECEC;
 }
 
 .menu-btn,
@@ -176,6 +188,8 @@ img {
   position: absolute;
   top: 0;
   left: 50%;
+  display: flex;
+  flex-direction: column;
   transform: translateX(-50%) translateY(-100%);
   width: 100%;
   max-width: 480px;
@@ -187,6 +201,10 @@ img {
 
 .modal-menu.is-open {
   transform: translateX(-50%) translateY(0%);
+}
+
+.modal-menu-list {
+  margin-bottom: 32px;
 }
 
 .modal-menu-link {
@@ -201,8 +219,10 @@ img {
 }
 
 .mobail-contakt-list {
+  position: absolute;
   display: flex;
   flex-direction: column;
+  margin-bottom: 64px;
 }
 
 .mobail-tel-link {
@@ -216,9 +236,31 @@ img {
   color: var(--accent-color);
 }
 
+.mobail-email-link {
+  display: block;
+  font-family: var(--text-font);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.167;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
 .social-mobail-list {
   display: flex;
   align-items: center;
+  padding-bottom: 48px;
+}
+
+.social-mobail-link {
+  display: block;
+  margin-right: 10px;
+  font-family: var(--text-font);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.222;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
 }
 
 /*.navigation {
