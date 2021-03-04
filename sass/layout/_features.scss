@@ -1,13 +1,13 @@
 @media screen and (min-width: 480px){
     .features-list {
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
     }
     .features-list-item {
         width: 448px;
         height: 225px;
         margin-bottom: 30px;
-        }
+    }
     .features-link {
         display: block;
         width: 448px;
@@ -46,8 +46,18 @@
 }
 @media screen and (min-width: 768px) {
     .features-list {
-        display: flex;
-        align-items: center;
+        margin: -15px;
+        
+    }
+    .features-list-item {
+        width: 354px;
+        height: 251px;
+        margin: 15px;
+    }
+    
+    .features-link {
+        width: 354px;
+        height: 120px;
     }
     .icom-antenna,
     .icom-clock,
@@ -55,73 +65,63 @@
     .icom-astronaut {
         margin: 25px 142px;
     }
-    .features-link {
-        matgin-bottom: 10px;
+    .features-title {
+        width: 270px;
+        height: 16px;
+        text-align: left;
+        
     }
     .features-text {
         width: 354px;
         height: 75px;
-        }
+        
+    }
 }
+
 @media screen and (min-width: 1200px) {
     .features-list {
         display: flex;
         align-items: center;
+        flex-wrap: nowrap;
     }
-    .features-list-item {
-        &:not(:last-child) {
-            margin-right: 30px;
-        }
+    .features-list-item:not(:last-child) {
+        width: 270px;
+        height: 251px;
+        margin-right: 30px;
+    }
+    .features-link {
+        display: flex;
+        align-items: center;
+        max-width: 270px;
+        height: 120px;
+        margin-bottom: 30px;
+        background: #F5F4FA;
+        border-radius: 4px;
+    }
     .icom-antenna,
     .icom-clock,
     .icom-diagram,
     .icom-astronaut {
         margin: 25px 100px;
     }
+    
+    .features-title {
+        font-family: var(--text-font);
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.143;
+        letter-spacing: 0.03em;
+        margin-bottom: 10px;
+    }
     .features-text {
         width: 270px;
         height: 75px;
         margin-right: 30px;
-        
+        font-family: var(--text-font);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.714;
+        letter-spacing: 0.03em;
+        color: #757575;
     }
-}
-
-
-
-
-
-
-
-
-
-
-/*.features-list {
-    display: flex;
-    align-items: center;
-}
-.features-list-item {
-    &:not(:last-child) {
-        width: 270px;
-        margin-right: 30px;
-    }
-}
-.features-link {
-    display: flex;
-    align-items: center;
-    max-width: 270px;
-    height: 120px;
-    margin-bottom: 30px;
-    background: #F5F4FA;
-    border-radius: 4px;
-}
-.features-text {
-    width: 270px;
-    height: 75px;
-    margin-right: 30px;
-    font-family: var(--text-font);
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.714;
-    letter-spacing: 0.03em;
-    color: #757575;
-*/}
+}    
