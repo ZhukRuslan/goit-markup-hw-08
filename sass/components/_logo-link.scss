@@ -1,28 +1,37 @@
-.logo-link {
-    width: 134px;
-    height: 28px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 1.167;
-    letter-spacing: 0.03em;
-    color: var(--accent-color);
+@media screen and (min-width: 480px) {
+    .logo-link {
+        width: 134px;
+        height: 28px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 1.167;
+        letter-spacing: 0.03em;
+        color: var(--accent-color);
+    }
+    .logo-word {
+        color: #212121;
+    }
+    .footer .logo-link {
+        position: absolute;
+        width: 154px;
+        height: 28px;
+        left: 163px;
+        top: 60px;
+    }
+    .logo-word-write {
+        color: #FFFFFF;
+    }
 }
-.logo-word {
-    color: #212121;
-}
-.footer .logo-link {
-    position: absolute;
-    width: 154px;
-    height: 28px;
-    left: 163px;
-    top: 60px;
-}
-.logo-word-write {
-    color: #FFFFFF;
+@media screen and (min-width: 768px) {
+    .footer .logo-link {
+        position: absolute;
+        left: 115px;
+        top: 60px;
+    }
 }
 
-@media screen and (min-width: 1200) {
+@media screen and (min-width: 1200px) {
     .logo-link {
         margin-right: 80px;
         font-weight: 700;
@@ -30,15 +39,3 @@
         line-height: 1.192;
     }
 }
-
-
-
-/*
-.logo-word-write {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.192;
-    letter-spacing: 0.03em;
-    color: #FFFFFF;
-}*/
