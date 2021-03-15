@@ -8,6 +8,12 @@
     align-items: center;
     justify-content: space-between;
     }
+.footer & {
+    display: flex;
+    flex-direction: column;
+    
+    
+    }
 }
 
 @media screen and (min-width: 480px) {
@@ -24,6 +30,7 @@
             height: 50px;
             align: center;
         }
+        
     }
 }
 

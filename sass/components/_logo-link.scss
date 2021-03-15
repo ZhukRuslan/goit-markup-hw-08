@@ -11,6 +11,17 @@
 .logo-word {
     color: #212121;
 }
+.footer .logo-link {
+    position: absolute;
+    width: 154px;
+    height: 28px;
+    left: 163px;
+    top: 60px;
+}
+.logo-word-write {
+    color: #FFFFFF;
+}
+
 @media screen and (min-width: 1200) {
     .logo-link {
         margin-right: 80px;
