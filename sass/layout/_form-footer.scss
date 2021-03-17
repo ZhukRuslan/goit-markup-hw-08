@@ -74,23 +74,32 @@
         fill: #ffffff;
     }
 }
-
-
-
 @media screen and (min-width: 768px){
     .mailing-form {
         position: absolute;
         top: 247px;
         left: 166px;
-        width: 450px;
-        height: 156px;
     }
 }
-
-
-
-@media screen and (min-width: 1200px){
-    
+@media screen and (min-width: 1200px) {
+    /*.mailing-form {
+        position: absolute;
+        top: 72px;
+        right: 0;
+        min-width: 570px;
+        height: 86px;
+        
+    }
+    .block-form-wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        
+    }
+    .email-mailing-input {
+        width: 358px;
+        margin-right: 12px;
+    }*/
 }
 
 
@@ -167,3 +176,4 @@
     height: 24px;
     margin-left: 10px;
 }*/
+
