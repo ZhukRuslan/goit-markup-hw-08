@@ -12,39 +12,95 @@
 <body>
     <header class="header">
         <div class="container">
-    <nav class="navigation">
-        <a class="logo-link link" href="#">
-            Web<span class="logo-word">Studio</span>
-        </a>
-        <ul class="navigation-list list">
-            <li class="navigation-list-item">
-                <a class="navigation-list-link link" href="./index.html">Студия</a>
-            </li>
-            <li class="navigation-list-item">
-                <a class="navigation-list-link link active current" href="./portfolio.html">Портфолио</a>
-            </li>
-            <li class="navigation-list-item">
-                <a class="navigation-list-link link" href="#">Контакты</a>
-            </li>
-        </ul>
-    </nav>
-        <a class="email-link link" href="mailto:info@devstudio.com">
-            <svg class="icom-envelope">
-                <use href="./images/sprite.svg#envelope"></use>
-            </svg>
-        info@devstudio.com</a>
-
-        <a class="tel-link link" href="tel:+380961111111">
-            <svg class="icom-smartphone">
-                <use href="./images/sprite.svg#smartphone"></use>
-            </svg> 
-        +38 096 111 11 11</a>
+            <nav class="navigation">
+            <a class="logo-link link" href="#">
+                Web<span class="logo-word">Studio</span>
+            </a>
+            <ul class="navigation-list list">
+                <li class="navigation-list-item">
+                    <a class="navigation-list-link link" href="./index.html">Студия</a>
+                </li>
+                <li class="navigation-list-item">
+                    <a class="navigation-list-link link active current" href="./portfolio.html" target="_blank">Портфолио</a>
+                </li>
+                <li class="navigation-list-item">
+                    <a class="navigation-list-link link" href="#">Контакты</a>
+                </li>
+            </ul>
+            </nav>
+            <button type="button" class="menu-btn" data-menu-button>
+                <svg class="icon-menu">
+                    <use href="./images/sprite.svg#i-menu"></use>
+                </svg>
+            </button>
+                  
+            <a class="email-link link" href="mailto:info@devstudio.com">
+                <svg class="icom-envelope">
+                    <use href="./images/sprite.svg#envelope"></use>
+                </svg>
+            info@devstudio.com</a>
+                                
+            <a class="tel-link link" href="tel:+380961111111">
+                <svg class="icom-smartphone">
+                    <use href="./images/sprite.svg#smartphone"></use>
+                </svg> 
+            +38 096 111 11 11</a>
         </div>
-    </header>
+        
+        <div class="modal-menu" data-menu>
+            
+            <button type="button" class="mobail-close-btn" data-menu-close>
+                <svg class="mobail-icom-close-btn">
+                    <use href="./images/sprite.svg#close-btn"></use>
+                </svg> 
+            </button>
+            <ul class="modal-menu-list list">
+                <li class="modal-menu-list-item">
+                    <a href="./index.html" class="modal-menu-link link">Студия</a>
+                </li>
+                <li class="modal-menu-list-item">
+                    <a href="#" class="modal-menu-link link">Портфолио</a>
+                </li>
+                <li class="modal-menu-list-item">
+                    <a href="#" class="modal-menu-link link">Контакты</a>
+                </li>
+            </ul>
+            <div class="mobail-contakt">
+                <ul class="mobail-contakt-list list">
+                    <li class="mobail-contakt-list-item">
+                        <a class="mobail-tel-link link" href="tel:+380961111111">
+                            +38 096 111 11 11</a>
+                    </li> 
+                    <li class="mobail-contakt-list-item">                
+                        <a class="mobail-email-link link" href="mailto:info@devstudio.com">
+                            info@devstudio.com</a>
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="social-mobail">
+                <ul class="social-mobail-list list">
+                    <li class="social-mobail-list-item">
+                        <a class="social-mobail-link link" href="#">Instagram</a>
+                    </li> 
+                    <li class="social-mobail-list-item">
+                        <a class="social-mobail-link link" href="#">Twitter</a>
+                    </li> 
+                    <li class="social-mobail-list-item">
+                        <a class="social-mobail-link link" href="#">Facebook</a>
+                    </li> 
+                    <li class="social-mobail-list-item">
+                        <a class="social-mobail-link link" href="#">LinkedIn</a>
+                    </li> 
+                </ul>
+            </div>
+        </div>
+        
+        </header>
         
     <main class="main">
         <!--projects-->
-    <section class="projects">
+<!--<section class="projects">
    <div class="container">
         <ul class="main-project-list list">
             <li class="main-project-item">
@@ -175,11 +231,11 @@
             </li>
         </ul>
     </div>
-        </section>
+    </section>-->
     </main>
 
-    <footer class="footer">
-        <!--contact-->
+    <!--<footer class="footer">
+        
         <div class="container">
             <a class="logo-link link" href="#">
                 Web<span class="logo-word-write">Studio</span>
@@ -247,6 +303,7 @@
                 </form>
         </div>
         
-    </footer> 
+    </footer> -->
+    <script src="./js/modal-menu.js"></script>
 </body>
 </html>
