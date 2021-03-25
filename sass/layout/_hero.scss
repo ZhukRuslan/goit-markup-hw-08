@@ -1,4 +1,4 @@
-@media screen and (min-width: 480px) {
+
     .hero {
         position: relative;
         width: 100%;
@@ -19,8 +19,8 @@
     }
     .hero-title {
         position: absolute;
-        top: 118px;
-        left: 60px;
+        margin-top: 118px;
+        margin-left: 60px;
         width: 360px;
         height: 84px;
         font-family: var(--text-font);
@@ -34,8 +34,8 @@
     }
     .title-btn {
         position: absolute;
-        left: 140px;
-        bottom: 118px;
+        //left: 140px;
+        //top: 292px;
         min-width: 200px;
         height: 50px;
         padding: 10px 32px;
@@ -49,7 +49,7 @@
         letter-spacing: 0.06em;
         color: #FFFFFF;
     }
-}
+
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
   screen and (min-resolution: 192dpi) and (min-width: 320px),
   screen and (min-resolution: 2dppx) and (min-width: 320px) {
