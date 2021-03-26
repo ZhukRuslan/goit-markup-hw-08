@@ -471,10 +471,19 @@ img {
   box-sizing: border-box;
 }
 
-.hero-title {
+.content-hero {
   position: absolute;
-  margin-top: 118px;
-  margin-left: 60px;
+  top: 118px;
+  left: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 360px;
+  height: 164px;
+}
+
+.hero-title {
+  margin-bottom: 30px;
   width: 360px;
   height: 84px;
   font-family: var(--text-font);
@@ -488,7 +497,6 @@ img {
 }
 
 .title-btn {
-  position: absolute;
   min-width: 200px;
   height: 50px;
   padding: 10px 32px;
@@ -513,19 +521,10 @@ img {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main/hero/bg-tablet.jpg);
   }
 
-  .hero-title {
+  .content-hero {
     position: absolute;
-    left: 204px;
     top: 118px;
-    width: 360px;
-    height: 84px;
-    font-size: 26px;
-  }
-
-  .title-btn {
-    position: absolute;
-    left: 284px;
-    top: 232px;
+    left: 204px;
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
@@ -534,16 +533,18 @@ img {
   }
 }
 @media screen and (min-width: 1200px) {
+  .content-hero {
+    position: absolute;
+    top: 200px;
+    left: 452px;
+  }
+
   .hero {
-    max-width: 100%;
     min-height: 600px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main/hero/bg-desktop.jpg);
   }
 
   .hero-title {
-    position: absolute;
-    top: 200px;
-    left: 452px;
     width: 696px;
     height: 120px;
     font-size: 44px;
@@ -551,11 +552,7 @@ img {
   }
 
   .title-btn {
-    position: absolute;
-    top: 350px;
-    left: 700px;
     padding: 10px 28px;
-    font-weight: 700;
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
