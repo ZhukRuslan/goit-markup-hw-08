@@ -53,20 +53,20 @@ img {
   text-decoration: none;
 }
 
-@media screen and (min-width: 480px) {
-  .section-padding {
-    padding-top: 66px;
-    padding-bottom: 58px;
+@media screen and (max-width: 767px) {
+  .features {
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 @media screen and (min-width: 768px) {
-  .section-padding {
+  .features {
     padding-top: 60px;
     padding-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .section-padding {
+  .features {
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -84,7 +84,6 @@ img {
   display: flex;
   align-items: center;
 }
-
 @media screen and (max-width: 767px) {
   .container {
     margin: 0 auto;
