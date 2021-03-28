@@ -70,6 +70,10 @@ img {
     padding-top: 94px;
     padding-bottom: 94px;
   }
+
+  .activity {
+    padding-bottom: 94px;
+  }
 }
 .container {
   width: 100%;
@@ -678,16 +682,12 @@ img {
     height: 75px;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
   .activity {
     display: none;
   }
 }
 @media screen and (min-width: 1200px) {
-  .activity {
-    padding-bottom: 94px;
-  }
-
   .activity-list {
     display: flex;
     flex-wrap: wrap;

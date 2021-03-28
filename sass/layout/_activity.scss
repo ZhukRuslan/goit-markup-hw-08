@@ -1,14 +1,10 @@
-@media screen and (min-width: 480px) and (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
     .activity {
         display: none;
     }
 }
 
 @media screen and (min-width: 1200px) {
-    .activity  {
-        padding-bottom: 94px;
-    
-    }
     .activity-list {
         display: flex;
         flex-wrap: wrap;
