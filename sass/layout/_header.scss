@@ -1,10 +1,8 @@
 
-.header {
-    border-bottom: 1px solid #ECECEC;
-}
-
-@media screen and (max-width: 767px) {
-    .navigation-list,
+    .header {
+        border-bottom: 1px solid #ECECEC;
+    }
+   .navigation-list,
     .email-link,
     .tel-link,
     .icom-envelope,
@@ -46,22 +44,22 @@
         position: absolute;
         top: 0;
         left: 50%;
-        display: flex;
-        flex-direction: column;
+        //display: flex;
+        //flex-direction: column;
         transform: translateX(-50%) translateY(-100%);
         width: 100%;
-        max-width: 480px;
+        max-width: 4800px;
         height: 100%;
-        max-height: 796px;
-        padding: 48px 40px;
+        //padding: 48px 40px;
         background: tomato;
+        //border: 2px solid;
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     .modal-menu.is-open {
         transform: translateX(-50%) translateY(0%);
     }
-    .modal-menu-list {
-        margin-bottom: 32px;
+    /*.modal-menu-list {
+       //margin-bottom: 32px;
     }
     .modal-menu-link {
         position: relative;
@@ -84,7 +82,7 @@
     }
     .modal-menu-link {
         display: block;
-        margin-bottom: 32px;
+        //margin-bottom: 32px;
         font-family: var(--text-font);
         font-weight: 500;
         font-size: 40px;
@@ -96,7 +94,7 @@
         position: absolute;
         display: flex;
         flex-direction: column;
-        margin-bottom: 64px;
+        //margin-bottom: 64px;
     }
     .mobail-tel-link {
         display: block;
@@ -143,8 +141,7 @@
         height: 0px;
         border: 1px solid rgba(33, 33, 33, 0.2);
         transform: rotate(90deg);
-    }
-}
+    }*/
 
 @media screen and (min-width: 768px) {
     .menu-btn,

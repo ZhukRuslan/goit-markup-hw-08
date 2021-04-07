@@ -1,6 +1,6 @@
     .footer {
         position: relative;
-        width: 1600px;
+        width: 100%;
         min-height: 600px;
         background: #2F303A;
         margin-right: auto;
@@ -58,7 +58,14 @@
         background: rgba(255, 255, 255, 0.1);
         border-radius: 50%;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }   
+    } 
+    
+@media screen and (max-width: 768px) {
+    .footer {
+    display: flex;
+    align-items: center;
+    }
+}
 
 @media screen and (min-width: 768px) {
     .footer {

@@ -1,34 +1,41 @@
 .container {
     width: 100%;
+    max-width: 1200px;
     padding: 0 15px;
+    margin: 0 auto;
 
     .header & {
         position: relative;
         display: flex;
-        align-items: center;
+        justify-content: space-between;
         }
     .footer & {
         display: flex;
         align-items: center;
         }
+        .hero & {
+            position: relative;
+        }
+        
 }
 
-@media screen and (max-width: 767px) { 
+@media screen and (min-width: 480px) { 
     .container {
-        margin: 0 auto;
+        //width: 480px;
+        //margin: 0 auto;
     }
 }
 
 @media screen and (min-width: 768px) {
     .container {
-        width: 100%;
+        //width: 768px;
     }
     
 }
 
 @media screen and (min-width: 1200px) {
     .container{
-        width: 100%;
+        //width: 1200px;
     }
 }
     
